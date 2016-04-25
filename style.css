@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 900px;
+    margin: 0 auto;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+#box{
+    width: 900px;
+    text-align: right;
+}
+
+form{
+    text-align: right;
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    margin-top: 5px;
+}
+
+#btn{
+    display: block;
+    padding:  2px 5px;
+    margin: 25px 0 25px 831px;
+}
+
+.card{
+    vertical-align: top;
+    height: 113px;
+    margin: 5px;
+    width: 285px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+
+.front{
+    position: absolute;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5px;
+    height: 100px;
+    width: 273px;
+    backface-visibility: hidden;
+    transform: rotateY(0deg) perspective(600px);
+    transition: 1s;
+
+}
+
+.back{
+    background-color: bisque;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5px;
+    height: 100px;
+    width: 273px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg) perspective(600px) ;
+    transition: 1s;
+}
+
+.rotateCard >.front{
+    transform: rotateY(180deg);
+}
+
+.rotateCard >.back{
+    transform: rotateY(0deg);
+}
+
+
+.card h1{
+    font-size: 23px;
+    display: inline-block;
+    margin-right: 4px;
+    
+}
+
+.card img{
+    position: relative;
+    width: 15px;
+    top: 3px;
+}
+
+.card p{
+    font-size: 12px;
+}
+
+.arrow{
+    width: 0;
+    border-top: 20px solid silver;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    margin: 15px 0 0 115px;
+}
+
+.redArrow{
+    width: 0;
+    border-top: 20px solid red;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    margin: 15px 0 0 115px;
+}
+
+textarea{
+    width: 500px;
+    height: 100px;
+}
+
